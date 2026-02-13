@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admission - Royal Family Schools</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* ==========================
+       HERO SECTION
+    ========================== */
+    .admission-hero {
+      position: relative;
+      height: 50vh;
+      background: url('FB_IMG_1769698278041.jpg') center/cover no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .admission-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.55);
+    }
+    .admission-hero-text {
+      position: relative;
+      color: #fff;
+      text-align: center;
+    }
+    .admission-hero-text h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    .admission-hero-text p {
+      font-size: 1.2rem;
+    }
+
+    /* ==========================
+       FORM SECTION
+    ========================== */
+    .admission-form-section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .admission-form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+    }
+    .admission-form input,
+    .admission-form select,
+    .admission-form textarea {
+      width: 100%;
+      padding: 12px 14px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      font-size: 15px;
+      transition: 0.3s ease;
+      outline: none;
+    }
+    .admission-form input:focus,
+    .admission-form select:focus,
+    .admission-form textarea:focus {
+      border-color: #6e191a;
+      box-shadow: 0 0 0 3px rgba(110,25,26,.15);
+    }
+    .admission-form textarea {
+      grid-column: span 2;
+      resize: vertical;
+      min-height: 120px;
+    }
+    .admission-form button {
+      grid-column: span 2;
+      padding: 14px;
+      border-radius: 25px;
+      border: none;
+      background: #6e191a;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+    .admission-form button:hover {
+      background: #b7475f;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0,0,0,.2);
+    }
+
+    /* ==========================
+       RESPONSIVE
+    ========================== */
+    @media(max-width: 800px){
+      .admission-form {
+        grid-template-columns: 1fr;
+      }
+      .admission-hero-text h1 {
+        font-size: 2.2rem;
+      }
+      .admission-hero-text p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  
+        <header>
+      <div>Royal Family Schools</div>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="academics.html">Academics</a>
+    <a href="contact.html">Contact</a>
+    <a href="portal.html">School Portal</a>
+
+  </nav>
+
+      <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  
+    </header>
+    
+  <!-- HERO -->
+  <section class="admission-hero">
+    <div class="admission-overlay"></div>
+    <div class="admission-hero-text">
+      <h1>Admission Form</h1>
+      <p>Join Royal Family Schools — Apply for enrollment today!</p>
+    </div>
+  </section>
+
+  <!-- FORM SECTION -->
+  <section class="admission-form-section">
+    <form class="admission-form" action="#" method="POST">
+      
+      <input type="text" name="fullName" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <input type="date" name="dob" placeholder="Date of Birth" required>
+      
+      <select name="gender" required>
+        <option value="" disabled selected>Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+      
+      <input type="text" name="class" placeholder="Class Applying For" required>
+      
+      <textarea name="address" placeholder="Home Address" required></textarea>
+      <textarea name="additionalInfo" placeholder="Additional Information (Optional)"></textarea>
+      
+      <button type="submit">Submit Application</button>
+    </form>
+  </section>
+
+</body>
+</html>
