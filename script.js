@@ -1,3 +1,13 @@
+
+const API_URL = "https://royalfamilyschoolbackend.onrender.com/api";
+
+// Example for fetching students
+fetch("https://royalfamilyschoolbackend.onrender.com/api/students")
+  .then(res => res.json())
+  .then(data => console.log(data));
+
+
+
 /* ===========================
    HERO SLIDER + TYPING TEXT
 =========================== */
@@ -114,3 +124,5 @@ hamburger.addEventListener("click", () => {
 app.get("/api/test", (req, res) => {
   res.json({ message: "Backend working" });
 });
+
+fetch("http://localhost:5000/your-route")
