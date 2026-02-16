@@ -38,7 +38,10 @@
     /* ==========================
        FORM SECTION
     ========================== */
-    .admission-form-section {
+    .admission-section{
+  padding: 80px 10%;
+  display:flex;
+  justify-content:center;
       padding: 60px 20px;
       max-width: 900px;
       margin: auto;
@@ -58,6 +61,7 @@
       font-size: 15px;
       transition: 0.3s ease;
       outline: none;
+      
     }
     .admission-form input:focus,
     .admission-form select:focus,
@@ -90,17 +94,22 @@
     /* ==========================
        RESPONSIVE
     ========================== */
-    @media(max-width: 800px){
-      .admission-form {
-        grid-template-columns: 1fr;
-      }
-      .admission-hero-text h1 {
-        font-size: 2.2rem;
-      }
-      .admission-hero-text p {
-        font-size: 1rem;
-      }
-    }
+   @media(max-width:600px){
+
+  .admission-section{
+    padding:40px 20px;
+  }
+
+  .admission-form{
+    padding:25px 18px;
+  }
+
+  input, select{
+    font-size:16px;
+  }
+
+}
+
   </style>
 </head>
 <body>
@@ -134,7 +143,7 @@
   </section>
 
   <!-- FORM SECTION -->
-  <section class="admission-form-section">
+  <section class="admission-section">
     <form class="admission-form" action="#" method="POST">
       
       <input type="text" name="fullName" placeholder="Full Name" required>

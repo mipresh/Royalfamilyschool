@@ -1009,3 +1009,54 @@ h1, h2, h3 {
     display: flex;
   }
 }
+
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+@media(max-width:768px){
+
+  .contact-form {
+    display:block;
+  }
+
+  .nav-links{
+    position:absolute;
+    top:70px;
+    right:0;
+    background:white;
+    width:100%;
+    flex-direction:column;
+    text-align:center;
+    display:none;
+  }
+
+  .nav-links.active{
+    display:flex;
+  }
+}
+
+
+ @media(max-width:600px){
+
+  .admission-section{
+    padding:40px 20px;
+  }
+
+  .admission-form{
+    padding:25px 18px;
+  }
+
+  input, select{
+    font-size:16px;
+  }
+
+}
+.card{
+  max-width:600px;
+   display:flex;
+  justify-content:center;
+}
