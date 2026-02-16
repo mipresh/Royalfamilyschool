@@ -1055,8 +1055,7 @@ h1, h2, h3 {
   }
 
 }
+
 .card{
   max-width:600px;
-   display:flex;
-  justify-content:center;
 }
