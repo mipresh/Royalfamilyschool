@@ -67,7 +67,7 @@ function showSlide() {
 showSlide();
 
 
-const toggle = document.getElementById("hamburger");
+const toggle = document.getElementById("menuToggle");
 const links = document.getElementById("navLinks");
 
 toggle.addEventListener("click", () => {
