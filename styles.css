@@ -1011,6 +1011,7 @@ h1, h2, h3 {
  position: absolute;
   font-size: 28px;
   cursor: pointer;
+  text-align: right;
 }
 }
 
