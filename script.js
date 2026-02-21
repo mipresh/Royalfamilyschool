@@ -120,9 +120,9 @@ reveal();
 
 
 const hamburger = document.getElementById("hamburger");
-const nav = document.getElementById("nav");
+const nav = document.querySelector("nav");
 
-hamburger.addEventListener("click", () => {
+hamburger.addEventListener("click", ()=>{
   nav.classList.toggle("active");
 });
 
