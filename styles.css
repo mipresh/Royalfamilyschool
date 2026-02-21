@@ -969,7 +969,8 @@ h1, h2, h3 {
   flex-direction: column;
   cursor: pointer;
   gap: 6px;
-  position:relative
+
+
 }
 
 .hamburger span {
@@ -1008,11 +1009,14 @@ h1, h2, h3 {
 
   .hamburger {
     display: flex;
- position: absolute;
+  }
+}
+
+
+.menu-toggle {
+  display: none;
   font-size: 28px;
   cursor: pointer;
-  align-items: right;
-}
 }
 
 @media(max-width:768px){
@@ -1021,6 +1025,11 @@ h1, h2, h3 {
     display:block;
   }
 
+
+
+
+
+  
   .nav-links{
     position:absolute;
     top:70px;
