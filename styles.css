@@ -93,6 +93,9 @@ header{
 
 nav {
 padding-top: 10px;
+  display: flex;
+  list-style: none;
+   transition: transform 0.3s ease;
 }
 nav a {
   margin: 0 15px;
@@ -105,6 +108,36 @@ nav a {
 nav a:hover  {
 background: #3f0f0f;;
 }
+
+@media (max-width:768px){
+
+  .hamburger{
+    display:flex;
+  }
+
+  nav{
+    position: fixed;
+    top:70px;
+    left: 0;
+    width:100%;
+   
+   background: rgba(128, 56, 56, 0.75);
+   backdrop-filter: blur(8px);
+
+    flex-direction:column;
+    align-items:left;
+    gap:15px;
+    padding:30px 0;
+
+    transform:translateY(-150%);
+    transition:0.45s ease;
+  }
+
+  nav.active{
+    transform:translateY(0);
+  }
+}
+
 
 .btn {
   background: #3f0f0f;
