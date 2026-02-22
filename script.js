@@ -126,17 +126,11 @@ hamburger.addEventListener("click", ()=>{
   nav.classList.toggle("active");
 });
 
- // clear previous timer if user clicks again
-  clearTimeout(menuTimeout);
-
-  // only start timer if menu is open
-  if (nav.classList.contains("active")) {
-    menuTimeout = setTimeout(() => {
-      nav.classList.remove("active");
-      hamburger.classList.remove("active");
-    }, 4000);
-  };
-
+document.querySelectorAll("nav a").forEach(link=>{
+  link.addEventListener("click",()=>{
+    nav.classList.remove("active");
+  });
+});
 
 app.get("/api/test", (req, res) => {
   res.json({ message: "Backend working" });
