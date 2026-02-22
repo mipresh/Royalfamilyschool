@@ -14,11 +14,11 @@ header{
   overflow-x: hidden;
 }
 .container{
-  position: fixed;
+  position: sticky;
   top:0;
   left:0;
   width:100%;
-  z-index:1000;
+  z-index:999;
   overflow-x: hidden;
 }
 
@@ -1002,18 +1002,18 @@ h1, h2, h3 {
 
 /* MOBILE */
 @media(max-width:900px){
-  nav {
-    position: relative;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background: #541e1e;
-    display: none;
-    flex-direction: column;
-    text-align: center;
-    padding: 20px 0;
+  nav{
+    position:absolute;
+    top:70px;
+    right:-100%;
+    background:#0f172a;
+    flex-direction:column;
+    width:220px;
+    padding:20px;
+    transition:.3s;
   }
 
+  
   nav a {
     padding: 12px;
     display: block;
