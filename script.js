@@ -118,19 +118,14 @@ function reveal() {
 window.addEventListener("scroll", reveal);
 reveal();
 
-
-const hamburger = document.getElementById("hamburger");
+const hamburger = document.querySelector(".hamburger");
 const nav = document.querySelector("nav");
 
 hamburger.addEventListener("click", ()=>{
   nav.classList.toggle("active");
 });
 
-document.querySelectorAll("nav a").forEach(link=>{
-  link.addEventListener("click",()=>{
-    nav.classList.remove("active");
-  });
-});
+
 
 app.get("/api/test", (req, res) => {
   res.json({ message: "Backend working" });

@@ -49,32 +49,36 @@ nav a {
   border-radius: 2px;
 }
 
-/* MOBILE */
+
+
 @media(max-width:900px){
-  nav {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background: #541e1e;
-    flex-direction: column;
-    text-align: center;
-    padding: 20px 0;
-    transform: translateY(-20px);
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.3s ease;
+
+  nav{
+    position:absolute;
+    top:100%;
+    left:0;
+    width:100%;
+    background:#541e1e;
+    flex-direction:column;
+    text-align:center;
+    padding:20px 0;
+
+    transform:translateY(-120px);
+    opacity:0;
+    pointer-events:none;
+    transition:.35s ease;
   }
 
-  nav.active {
-    transform: translateY(0);
-    opacity: 1;
-    pointer-events: auto;
+  nav.active{
+    transform:translateY(0);
+    opacity:1;
+    pointer-events:auto;
   }
 
-  .hamburger {
-    display: flex;
+  .hamburger{
+    display:flex;
   }
+  
 
   nav a {
     margin: 10px 0;
