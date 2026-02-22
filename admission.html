@@ -155,21 +155,28 @@ nav a{
 /* ==========================
    MOBILE RESPONSIVE
 ========================== */
-@media(max-width:768px){
+@media(max-width:900px){
 
   nav{
     position:absolute;
-    top:70px;
-    right:-100%;
-    background:#0f172a;
+    top:100%;
+    left:0;
+    width:100%;
+    background:#541e1e;
     flex-direction:column;
-    width:220px;
-    padding:20px;
-    transition:.3s;
+    text-align:center;
+    padding:20px 0;
+
+    transform:translateY(-20px);
+    opacity:0;
+    pointer-events:none;
+    transition:.35s ease;
   }
 
   nav.active{
-    right:0;
+    transform:translateY(0);
+    opacity:1;
+    pointer-events:auto;
   }
 
   .hamburger{

@@ -1000,43 +1000,34 @@ h1, h2, h3 {
   border-radius: 3px;
 }
 
-/* MOBILE */
+
 @media(max-width:900px){
-  nav {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background: #541e1e;
-    display: none;
-    flex-direction: column;
-    text-align: center;
-    padding: 20px 0;
+
+  nav{
+    position:absolute;
+    top:100%;
+    left:0;
+    width:100%;
+    background:#541e1e;
+    flex-direction:column;
+    text-align:center;
+    padding:20px 0;
+
+    transform:translateY(-20px);
+    opacity:0;
+    pointer-events:none;
+    transition:.35s ease;
   }
 
-  nav a {
-    padding: 12px;
-    display: block;
+  nav.active{
+    transform:translateY(0);
+    opacity:1;
+    pointer-events:auto;
   }
 
-  nav.active {
-    display: flex;
+  .hamburger{
+    display:flex;
   }
-
-  nav {
-  transition: .4s ease;
-}
-
-  .hamburger {
-    display: flex;
-  }
-
-
-.menu-toggle {
-  display: none;
-  font-size: 28px;
-  cursor: pointer;
-}
 }
 
 
