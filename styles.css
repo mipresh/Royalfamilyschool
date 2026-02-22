@@ -11,11 +11,15 @@ header{
   justify-content: space-between;
   align-items: center;
   height: 50px;
+  overflow-x: hidden;
+}
+.container{
   position: fixed;
   top:0;
   left:0;
   width:100%;
   z-index:1000;
+  overflow-x: hidden;
 }
 
 body{
@@ -999,7 +1003,7 @@ h1, h2, h3 {
 /* MOBILE */
 @media(max-width:900px){
   nav {
-    position: absolute;
+    position: relative;
     top: 100%;
     left: 0;
     width: 100%;
