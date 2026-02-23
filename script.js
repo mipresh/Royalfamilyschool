@@ -118,17 +118,13 @@ function reveal() {
 window.addEventListener("scroll", reveal);
 reveal();
 
-document.addEventListener("DOMContentLoaded", () => {
-  const hamburger = document.querySelector(".hamburger");
-  const nav = document.querySelector(".nav");
 
-  if (hamburger && nav) {
-    hamburger.addEventListener("click", () => {
-      nav.classList.toggle("active");
-    });
-  }
+const hamburger = document.getElementById("hamburger");
+const nav = document.getElementById("nav");
+
+hamburger.addEventListener("click", () => {
+  nav.classList.toggle("active");
 });
-
 
 
 app.get("/api/test", (req, res) => {

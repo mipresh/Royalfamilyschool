@@ -155,22 +155,22 @@ nav a{
 /* ==========================
    MOBILE RESPONSIVE
 ========================== */
+
 @media(max-width:900px){
 
- nav{
-  position:fixed;
-    top:100%;
+  nav{
+    position:fixed;
+    top:70px; /* height of your header */
     left:0;
     width:100%;
     background:#541e1e;
     flex-direction:column;
     text-align:center;
     padding:20px 0;
-    display:flex;
-    transform:translateY(-50%);
+    transform:translateY(-120%);
     opacity:0;
     pointer-events:none;
-    transition:.35s ease;
+    transition:0.35s ease;
   }
 
   nav.active{
@@ -181,8 +181,9 @@ nav a{
 
   .hamburger{
     display:flex;
-
   }
+
+}
 
   .admission-hero{
     height:40vh;
@@ -206,7 +207,7 @@ nav a{
     grid-column:span 1;
   }
 
-}
+
 
 /* EXTRA SMALL PHONES */
 @media(max-width:400px){
