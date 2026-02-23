@@ -1044,7 +1044,7 @@ h1, h2, h3 {
 @media(max-width:900px){
 
   nav{
-    position:fixed;
+    position:relative;
     top:100%;
     left:0;
     width:100%;
