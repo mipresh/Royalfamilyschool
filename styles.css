@@ -11,7 +11,7 @@ header{
   justify-content: space-between;
   align-items: center;
   height: 50px;
-  overflow-x: hidden;
+
 }
 .container{
   position: sticky;
@@ -19,7 +19,7 @@ header{
   left:0;
   width:100%;
   z-index:1000;
-  overflow-x: hidden;
+
 }
 
 /* Nav links */
@@ -51,39 +51,7 @@ nav a {
 
 
 
-@media(max-width:900px){
 
-  nav{
-    position:relative;
-    top:100%;
-    left:0;
-    width:100%;
-    background:#541e1e;
-    flex-direction:column;
-    text-align:center;
-    padding:20px 0;
-
-    transform:translateY(-15px);
-    opacity:0;
-    pointer-events:none;
-    transition:.35s ease;
-  }
-
-  nav.active{
-    transform:translateY(0);
-    opacity:1;
-    pointer-events:auto;
-  }
-
-  .hamburger{
-    display:flex;
-  }
-  
-
-  nav a {
-    margin: 10px 0;
-  }
-}
 
 .logo-container {
   display: flex;
@@ -1073,6 +1041,39 @@ h1, h2, h3 {
 }
 
 
+@media(max-width:900px){
+
+  nav{
+    position:relative;
+    top:100%;
+    left:0;
+    width:100%;
+    background:#541e1e;
+    flex-direction:column;
+    text-align:center;
+    padding:20px 0;
+
+    transform:translateY(-15px);
+    opacity:0;
+    pointer-events:none;
+    transition:.35s ease;
+  }
+
+  nav.active{
+    transform:translateY(0);
+    opacity:1;
+    pointer-events:auto;
+  }
+
+  .hamburger{
+    display:flex;
+  }
+  
+
+  nav a {
+    margin: 10px 0;
+  }
+}
 
 
 
