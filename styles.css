@@ -1036,17 +1036,10 @@ h1, h2, h3 {
 
 @media(max-width:900px){
 
-  .container{
-  position: sticky;
-  top:0;
-  left:0;
-  width:100%;
-  z-index:1000;
 
-}
-
+  
   nav{
-    position:fixed;
+    position:relative;
     top:120px; /* height of your header */
     left:0;
     width:100%;
