@@ -1048,11 +1048,11 @@ h1, h2, h3 {
 @media(max-width:900px){
 
   section{
-  scroll-margin-top:150px;
+  margin-top:150px;
 }
 
   .container{
-  position: fixed;
+  position: sticky;
   top:0;
   left:0;
   width:100%;
