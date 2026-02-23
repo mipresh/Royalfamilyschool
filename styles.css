@@ -1047,7 +1047,7 @@ h1, h2, h3 {
 
   nav{
     position:fixed;
-    top:70px; /* height of your header */
+    top:120px; /* height of your header */
     left:0;
     width:100%;
     background:#541e1e;
@@ -1069,7 +1069,7 @@ h1, h2, h3 {
   .hamburger{
     display:flex;
   }
-  
+
 
   nav a {
     margin: 10px 0;
