@@ -11,6 +11,7 @@ header{
   justify-content: space-between;
   align-items: center;
   height: 50px;
+
 }
 
 
@@ -1035,28 +1036,35 @@ h1, h2, h3 {
 
 @media(max-width:900px){
 
+  .container{
+  position: sticky;
+  top:0;
+  left:0;
+  width:100%;
+  z-index:1000;
+
+}
+
   nav{
-    position:absolute;
-    top:100%;
+    position:fixed;
+    top:70px; /* height of your header */
     left:0;
     width:100%;
     background:#541e1e;
     flex-direction:column;
     text-align:center;
     padding:20px 0;
-    z-index:999;
-    display:flex;
-    transform:translateY(-20px);
+    transform:translateY(-120%);
     opacity:0;
     pointer-events:none;
-    transition:.35s ease;
+    transition:0.35s ease;
   }
 
   nav.active{
     transform:translateY(0);
     opacity:1;
     pointer-events:auto;
-  } 
+  }
 
   .hamburger{
     display:flex;
