@@ -64,15 +64,7 @@ function showSlide() {
   }, 6000);
 }
 
-showSlide();
 
-
-const toggle = document.getElementById("menuToggle");
-const links = document.getElementById("navLinks");
-
-toggle.addEventListener("click", () => {
-  links.classList.toggle("active");
-});
 
 
 /* ===========================
