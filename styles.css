@@ -11,16 +11,8 @@ header{
   justify-content: space-between;
   align-items: center;
   height: 50px;
-
 }
-.container{
-  position: sticky;
-  top:0;
-  left:0;
-  width:100%;
-  z-index:1000;
 
-}
 
 /* Nav links */
 nav {
@@ -1044,7 +1036,7 @@ h1, h2, h3 {
 @media(max-width:900px){
 
   nav{
-    position:fixed;
+    position:absolute;
     top:100%;
     left:0;
     width:100%;
