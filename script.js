@@ -120,7 +120,7 @@ reveal();
 
 document.addEventListener("DOMContentLoaded", () => {
   const hamburger = document.querySelector(".hamburger");
-  const nav = document.querySelector("nav");
+  const nav = document.querySelector(".nav");
 
   if (hamburger && nav) {
     hamburger.addEventListener("click", () => {
