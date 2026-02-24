@@ -44,12 +44,12 @@ function typeDesc() {
   const interval = setInterval(() => {
     descEl.textContent += text.charAt(i);
     i++;
-    if (i === text.length) clearInterval(interval);
+    if (i >= text.length) clearInterval(interval);
   }, 30);
 }
 
 function showSlide() {
-  slides.forEach(s => s.classList.remove("active"));
+  slides.forEach(slide => slide.classList.remove("active"));
   slides[index].classList.add("active");
 
   titleEl.textContent = "";
@@ -64,8 +64,8 @@ function showSlide() {
   }, 6000);
 }
 
-
-
+// ✅ START THE SLIDER
+showSlide();
 
 /* ===========================
    CARD SLIDER
