@@ -11,12 +11,7 @@ header{
   justify-content: space-between;
   align-items: center;
   height: 50px;
-  .header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
- 
-}
+  
 
 }
 
@@ -1053,7 +1048,7 @@ h1, h2, h3 {
 
 @media(max-width:900px){
   
- header{
+  .container{
   position: sticky;
   top:0;
   left:0;
@@ -1065,7 +1060,7 @@ h1, h2, h3 {
 
   nav{
     position:fixed;
-    top:70px; /* height of your header */
+    top:120px; /* height of your header */
     left:0;
     width:100%;
     background:#541e1e;
