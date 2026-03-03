@@ -28,7 +28,6 @@ nav a {
   font-weight: 500;
 }
 
-
 /* Hamburger */
 .hamburger {
   display: none;
@@ -1025,7 +1024,7 @@ h1, h2, h3 {
   .contact-form {
     display:block;
   }
-
+  
 }
 
  @media(max-width:600px){
@@ -1058,45 +1057,41 @@ h1, h2, h3 {
   z-index:1000;
 
 }
-}
 
-@media(max-width:900px){
-  nav {
-    position: fixed;
-    top: 50px; /* header height, adjust if needed */
-    left: 0;
-    width: 100%;
-    flex-direction: column;
-    text-align: center;
-    padding: 20px 0;
-    background: #541e1e;
-    transform: translateY(-120%);
-    opacity: 0;
-    pointer-events: none;
-    transition: 0.35s ease;
-    z-index: 1000;
+
+  nav{
+    position:fixed;
+    top:120px; /* height of your header */
+    left:0;
+    width:100%;
+    background:#541e1e;
+    flex-direction:column;
+    text-align:center;
+    padding:20px 0;
+    transform:translateY(-120%);
+    opacity:0;
+    pointer-events:none;
+    transition:0.35s ease;
   }
 
-  nav.active {
-    transform: translateY(0);
-    opacity: 1;
-    pointer-events: auto;
+  nav.active{
+    transform:translateY(0);
+    opacity:1;
+    pointer-events:auto;
   }
 
-  .hamburger {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    cursor: pointer;
-    z-index: 1100;
+  .hamburger{
+    display:flex;
   }
+
 
   nav a {
     margin: 10px 0;
   }
-} 
+}
 
-@media(max-width:900px){
+
+
 .portal-item i {
   font-size: 40px;
   color: #491b1e; /* change to your brand color */
@@ -1108,5 +1103,4 @@ h1, h2, h3 {
   flex-direction: column;
   align-items: center;
   text-decoration: none;
-}
 }
