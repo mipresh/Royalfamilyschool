@@ -111,7 +111,7 @@ window.addEventListener("scroll", reveal);
 reveal();
 
 
-const hamburger = document.getElementById("hamburger");
+ const hamburger = document.getElementById("hamburger");
 const nav = document.getElementById("nav");
 
 let menuTimeout;

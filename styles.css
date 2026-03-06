@@ -986,24 +986,33 @@ h1, h2, h3 {
   align-items: center;
 }
 
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 14px;
-  margin-bottom: 15px;
-  border-radius: 10px;
-  border: 1px solid #ddd;
+.contact-form{
+  display:flex;
+  flex-direction:column;
+  width:100%;
 }
 
-.contact-form {
-  display: flex;
-  flex-direction: column;
+.contact-form input,
+.contact-form textarea{
+  width:100%;
+  padding:14px;
+  margin-bottom:15px;
+  border-radius:10px;
+  border:1px solid #ddd;
 }
 
 .contact-form button {
   margin-inline: auto;
 }
 
+@media (max-width:768px){
+
+.contact-grid{
+  grid-template-columns:1fr;
+  max-width:600px;
+}
+
+}
 
 .map-section {
   margin-top: 30px;
@@ -1021,11 +1030,15 @@ h1, h2, h3 {
 
 @media(max-width:768px){
 
-  .contact-form {
-    display:block;
+  .contact-form{
+      grid-template-columns:1fr;
+ max-width:600px;
+}
   }
   
-}
+  
+  
+
 
  @media(max-width:600px){
 
@@ -1048,20 +1061,19 @@ h1, h2, h3 {
 
 
 @media(max-width:900px){
-  
+
   .container{
-  position: sticky;
-  top:0;
-  left:0;
-  width:100%;
-  z-index:1000;
-
-}
-
+    position:sticky;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+  }
 
   nav{
+    display:flex;
     position:fixed;
-    top:120px; /* height of your header */
+    top:120px;
     left:0;
     width:100%;
     background:#541e1e;
@@ -1072,6 +1084,7 @@ h1, h2, h3 {
     opacity:0;
     pointer-events:none;
     transition:0.35s ease;
+    z-index:999;
   }
 
   nav.active{
@@ -1082,11 +1095,12 @@ h1, h2, h3 {
 
   .hamburger{
     display:flex;
+    cursor:pointer;
+    z-index:1001;
   }
 
-
-  nav a {
-    margin: 10px 0;
+  nav a{
+    margin:10px 0;
   }
 }
 
