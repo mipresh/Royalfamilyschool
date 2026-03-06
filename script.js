@@ -111,27 +111,15 @@ window.addEventListener("scroll", reveal);
 reveal();
 
 
- const hamburger = document.getElementById("hamburger");
+const hamburger = document.getElementById("hamburger");
 const nav = document.getElementById("nav");
 
-let menuTimeout;
-
-hamburger.addEventListener("click", () => {
-  nav.classList.toggle("active");
-  hamburger.classList.toggle("active");
-
-  // clear previous timer if user clicks again
-  clearTimeout(menuTimeout);
-
-  // only start timer if menu is open
-  if (nav.classList.contains("active")) {
-    menuTimeout = setTimeout(() => {
-      nav.classList.remove("active");
-      hamburger.classList.remove("active");
-    }, 4000);
-  }
-});
-
+if (hamburger && nav) {
+  hamburger.addEventListener("click", () => {
+    nav.classList.toggle("active");
+    hamburger.classList.toggle("active");
+  });
+}
 
 
 app.get("/api/test", (req, res) => {

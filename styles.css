@@ -1070,7 +1070,7 @@ h1, h2, h3 {
     z-index:1000;
   }
 
-  nav{
+  .nav{
     display:flex;
     position:fixed;
     top:120px;
@@ -1087,7 +1087,7 @@ h1, h2, h3 {
     z-index:999;
   }
 
-  nav.active{
+  .nav.active{
     transform:translateY(0);
     opacity:1;
     pointer-events:auto;
@@ -1099,7 +1099,7 @@ h1, h2, h3 {
     z-index:1001;
   }
 
-  nav a{
+  .nav a{
     margin:10px 0;
   }
 }
