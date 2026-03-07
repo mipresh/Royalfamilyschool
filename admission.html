@@ -137,6 +137,56 @@ nav a{
 }
 
 /* ==========================
+   FORM MOBILE RESPONSIVE
+========================== */
+
+/* Medium screens (tablets / smaller laptops) */
+@media (max-width:900px) {
+  .admission-form {
+    grid-template-columns: 1fr; /* stack all inputs */
+    gap: 15px;
+    max-width: 600px;
+  }
+
+  .admission-form textarea,
+  .admission-form button {
+    grid-column: 1; /* ensure full width */
+  }
+
+  .admission-section {
+    padding: 40px 15px; /* smaller padding for smaller screens */
+    max-width: 600px;
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width:600px) {
+  .admission-form input,
+  .admission-form select,
+  .admission-form textarea,
+  .admission-form button {
+    padding: 10px;
+    font-size: 14px;
+    max-width: 400px;
+  }
+}
+
+/* Extra small phones */
+@media (max-width:400px) {
+  .admission-section {
+    padding: 30px 10px;
+  }
+
+  .admission-form input,
+  .admission-form select,
+  .admission-form textarea,
+  .admission-form button {
+    padding: 8px;
+    font-size: 13px;
+    max-width: 600px;
+  }
+}
+/* ==========================
    MOBILE RESPONSIVE
 ========================== */
 
