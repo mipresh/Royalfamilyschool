@@ -111,16 +111,16 @@ window.addEventListener("scroll", reveal);
 reveal();
 
 
-const hamburger = document.getElementById("hamburger");
-const nav = document.getElementById("nav");
 
-if (hamburger && nav) {
-  hamburger.addEventListener("click", () => {
-    nav.classList.toggle("active");
+
+document.addEventListener("DOMContentLoaded", function(){
+  const hamburger = document.getElementById("hamburger");
+  const nav = document.getElementById("nav");
+  hamburger.addEventListener("click", function(){
     hamburger.classList.toggle("active");
+    nav.classList.toggle("active");
   });
-}
-
+});
 
 app.get("/api/test", (req, res) => {
   res.json({ message: "Backend working" });

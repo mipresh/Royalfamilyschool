@@ -6,30 +6,53 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link rel=stylesheet href="styles.css"/>
 <title>RFschool</title>
+<style>
+  @media(max-width:900px){
+    .hamburger { display:flex; }
+    nav {
+      position:fixed;
+      top:60px; /* header height */
+      left:0;
+      width:100%;
+      flex-direction:column;
+      background:#541e1e;
+      transform:translateY(-120%);
+      opacity:0;
+      pointer-events:none;
+      transition:0.35s ease;
+      z-index:999;
+    }
+    nav.active { transform:translateY(0); opacity:1; pointer-events:auto; }
+    nav a { padding:15px 0; text-align:center; }
+    .hamburger.active span:nth-child(1){ transform: rotate(45deg) translate(5px,5px);}
+    .hamburger.active span:nth-child(2){ opacity:0; }
+    .hamburger.active span:nth-child(3){ transform: rotate(-45deg) translate(7px,-6px);}
+  }
+</style>
 <body>
   <div class="container">
   <div class="logo-container">
     <img src="royal-family.png" class="logo" alt="Royal Family Schools Logo">
     </div>
-         <header>
-      <div>Royal Family Schools</div>
+             <header>
+
+<div>Royal Family Schools</div>
+
+<div class="hamburger" id="hamburger">
+<span></span>
+<span></span>
+<span></span>
+</div>
+
 <nav class="nav" id="nav">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="academics.html">Academics</a>
-    <a href="contact.html">Contact</a>
-    <a href="portal.html">School Portal</a>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="academics.html">Academics</a>
+<a href="contact.html">Contact</a>
+<a href="portal.html">School Portal</a>
+</nav>
 
-  </nav>
-
-      <div class="hamburger" id="hamburger">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-
-  
-    </header>
+</header>
     </div>
     
     
@@ -69,6 +92,15 @@
 
 </div>
 
- <script src="script.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+  const hamburger = document.getElementById("hamburger");
+  const nav = document.getElementById("nav");
+  hamburger.addEventListener("click", function(){
+    hamburger.classList.toggle("active");
+    nav.classList.toggle("active");
+  });
+});
+</script>
 </body>
 </html>
